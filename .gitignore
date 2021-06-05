@@ -1,7 +1,10 @@
+templates
 .idea
 .idea/
 venv
 venv/
+*.db
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
