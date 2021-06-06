@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     context: __dirname,
@@ -59,6 +60,12 @@ module.exports = {
             filename: "[hash].css",
             chunkFilename: "[id]--[hash].css",
             ignoreOrder: false
+        }),
+        new CopyPlugin({
+            patterns: [
+                { from: "public/css", to: "css" },
+            ],
+
         }),
     ],
     target: 'web'
