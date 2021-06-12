@@ -38,26 +38,26 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
         <Switch>
-            {/*<Route*/}
-            {/*    path="/:slug/new/:page(\d+)?"*/}
-            {/*    component={New}*/}
-            {/*/>*/}
+            <Route
+                path="/:slug/new/:page(\d+)?"
+                component={New}
+            />
             <Route
                 path="/:slug/all/:page(\d+)?"
                 component={All}
             />
-            {/*<Route*/}
-            {/*    path="/:slug/rank/:page(\d+)?"*/}
-            {/*    component={Rank}*/}
-            {/*/>*/}
-            {/*<Route*/}
-            {/*    path="/:slug/starred/:page(\d+)?"*/}
-            {/*    component={Starred}*/}
-            {/*/>*/}
-            {/*<Route*/}
-            {/*    path="/:slug/:page(\d+)?"*/}
-            {/*    component={Page}*/}
-            {/*/>*/}
+            <Route
+                path="/:slug/rank/:page(\d+)?"
+                component={Rank}
+            />
+            <Route
+                path="/:slug/starred/:page(\d+)?"
+                component={Starred}
+            />
+            <Route
+                path="/:slug/:page(\d+)?"
+                component={Page}
+            />
             <Route path="" component={NotFound} />
         </Switch>
     </Router>

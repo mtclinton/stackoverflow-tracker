@@ -10,9 +10,7 @@ const fetchQuestions = async (
 
         return fetch(request).then((response) => {
             return response.json().then((data) => {
-                // console.log(data.message)
                 return data.message;
-                // return 'brapp';
             });
         });
 
